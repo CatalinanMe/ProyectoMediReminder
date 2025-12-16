@@ -1,9 +1,9 @@
 =====================================
-IacSharp - SISTEMA DE CONTROL DE MEDICAMENTOS (MediReminder)
+MediReminder - SISTEMA DE CONTROL DE MEDICAMENTOS
 =====================================
 
-Este proyecto es un sistema web completo de registro e inicio de sesión
-con gestión de medicamentos diarios. Incluye:
+Este proyecto es una aplicación web cliente para registro e inicio de sesión
+con gestión de medicamentos diarios (sin servidor). Incluye:
 
 1. Módulo de Autenticación: Registro e inicio de sesión de usuarios
 2. Módulo de Calendario: Seguimiento de toma de medicamentos
@@ -294,7 +294,7 @@ VERSIÓN HTML (Web):
 
 # MediReminder
 
-Aplicación cliente para registro de usuarios y seguimiento diario de toma de medicamentos (p. ej. anticonceptivos, vitaminas). Interfaz en `index.html` (registro/login) y `calendario.html` (panel principal con calendario y gestión de medicamentos). El proyecto contiene además una carpeta `IacSharp/` con código .NET 8 original opcional.
+Aplicación cliente para registro de usuarios y seguimiento diario de toma de medicamentos (p. ej. anticonceptivos, vitaminas). Interfaz en `index.html` (registro/login) y `calendario.html` (panel principal con calendario y gestión de medicamentos). Este repositorio NO incluye ya el proyecto `IacSharp/` — la versión .NET previa fue eliminada y el repositorio está centrado en la app web.
 
 **Estado:** Listo para pruebas locales (cliente-side, sin servidor).
 
@@ -302,7 +302,6 @@ Aplicación cliente para registro de usuarios y seguimiento diario de toma de me
 - `index.html`  : Registro e inicio de sesión.
 - `calendario.html` : Calendario, CRUD de medicamentos y estadísticas.
 - `README.md` : Documentación (este archivo).
-- `IacSharp/` : Proyecto .NET 8 (código auxiliar / histórico).
 
 **Características principales**
 - Registro y login en el navegador.
@@ -404,17 +403,10 @@ ESTRUCTURA DEL PROYECTO
 =====================================
 
 c:\xxxx(Tu ruta)
-├── formulario.html ← Formulario web (abrir en navegador)
-├── ReadMe.txt ← Este archivo
-├── datos_prueba.txt ← Ejemplos y datos de prueba
-├── ruts_prueba.txt ← RUTs chilenos válidos para prueba
-└── IacSharp/ ← Proyecto .NET 8
-├── Program.cs ← Código fuente C#
-├── IacSharp.csproj ← Archivo de proyecto
-└── bin/
-└── Debug/
-└── net8.0/
-└── IacSharp.exe ← Ejecutable compilado
+├── index.html ← Sistema de autenticación (Registro/Login)
+├── calendario.html ← Gestión de medicamentos
+├── README.md ← Este archivo
+└── (archivos auxiliares y recursos estáticos)
 
 =====================================
 SOLUCIÓN DE PROBLEMAS
@@ -481,14 +473,11 @@ NAVEGADORES SOPORTADOS:
 ESTRUCTURA DEL PROYECTO
 =====================================
 
-c:\Users(TU RUTA)
-├── index.html ← Sistema de autenticación (Registro/Login)
-├── calendario.html ← Gestión de medicamentos
-├── README.md ← Este archivo
-└── IacSharp/ ← Proyecto .NET 8 (opcional)
-├── Program.cs
-├── IacSharp.csproj
-└── bin/...
+c:\Users\Makem\Desktop\Iacsharp\
+├── index.html                 ← Sistema de autenticación (Registro/Login)
+├── calendario.html            ← Gestión de medicamentos
+├── README.md                  ← Este archivo
+└── (proyecto .NET histórico eliminado; repositorio centrado en la app web)
 
 =====================================
 GUÍA DE USO
