@@ -1,6 +1,6 @@
-*** Begin MediReminder README ***
+**_ Begin MediReminder README _**
 
-# MediReminder
+# MVP MediReminder
 
 Aplicación web cliente para registro de usuarios y seguimiento diario de
 toma de medicamentos. Esta versión está centrada únicamente en la
@@ -11,6 +11,7 @@ archivos históricos.
 **Dashboard:** `calendario.html` (calendario y gestión de medicamentos)
 
 Características resumidas:
+
 - Registro e inicio de sesión (validaciones básicas)
 - Calendario mensual con estado por día (tomada / pendiente / faltada)
 - CRUD de medicamentos (agregar, eliminar, marcar tomada)
@@ -18,38 +19,43 @@ Características resumidas:
 - Persistencia en `localStorage`
 
 Tecnologías usadas:
+
 - HTML5, CSS3
 - JavaScript (ES6+)
 - Bootstrap 5 (vía CDN)
 - Bootstrap Icons (vía CDN)
 
 Cómo ejecutar localmente:
+
 1. Abre `index.html` en un navegador moderno (o sirve la carpeta con un
-    servidor estático):
+   servidor estático):
 
 ```powershell
-cd "C:\Users\Makem\Desktop\Iacsharp"
+cd "tu ruta"
 python -m http.server 8000
 # Abrir http://localhost:8000/index.html
 ```
 
 Datos de prueba:
+
 - Nombre: Juan Pérez García
 - Email: juan@example.com
 - Contraseña: Password123
 - RUT: 12.345.678-9
 
 Estructura del repositorio (actual):
+
 - `index.html`
 - `calendario.html`
 - `README.md`
 - archivos estáticos (CSS/JS en línea o CDN)
 
 Notas de seguridad:
-- Los datos se guardan en `localStorage` sin cifrar; no usar en
-   producción para datos sensibles.
 
-*** End MediReminder README ***
+- Los datos se guardan en `localStorage` sin cifrar; no usar en
+  producción para datos sensibles.
+
+**_ End MediReminder README _**
 
 - Guía clara de instalación y uso
 - Ejemplos de datos de prueba
@@ -121,7 +127,7 @@ OPCIÓN 2: Desde PowerShell
 
 1. Abre PowerShell
 2. Ejecuta:
-   start C:\Users\xxxx(tu ruta)
+   start tu ruta
 
 OPCIÓN 3: Servir localmente (recomendado)
 
@@ -152,11 +158,13 @@ Aplicación cliente para registro de usuarios y seguimiento diario de toma de me
 **Estado:** Listo para pruebas locales (cliente-side, sin servidor).
 
 **Estructura principal**
-- `index.html`  : Registro e inicio de sesión.
+
+- `index.html` : Registro e inicio de sesión.
 - `calendario.html` : Calendario, CRUD de medicamentos y estadísticas.
 - `README.md` : Documentación (este archivo).
 
 **Características principales**
+
 - Registro y login en el navegador.
 - Validación de RUT (formato chileno), email y permisos mínimos de contraseña.
 - Calendario mensual con marcadores: tomada (verde), pendiente (amarillo), faltada (rojo).
@@ -165,6 +173,7 @@ Aplicación cliente para registro de usuarios y seguimiento diario de toma de me
 - Persistencia en `localStorage` (sin backend).
 
 **Tecnologías usadas**
+
 - **HTML5** y **CSS3**
 - **JavaScript (ES6+)** — lógica del frontend
 - **Bootstrap 5.3.0** — estilos y componentes UI
@@ -173,6 +182,7 @@ Aplicación cliente para registro de usuarios y seguimiento diario de toma de me
 - **(Opcional)** .NET 8 / C# en `IacSharp/` (código original de validación)
 
 **Limitaciones y notas de seguridad**
+
 - Todos los datos (incluidas contraseñas) se almacenan en `localStorage` sin cifrar. Esto está bien para pruebas locales o demos, pero **no es seguro** para producción.
 - Para producción: mover autenticación y datos a servidor seguro, usar hashing (bcrypt), HTTPS, y una base de datos.
 
@@ -198,6 +208,7 @@ npx serve -s . -l 8000
 También puedes abrir directamente `file:///C:/Users/Makem/Desktop/Iacsharp/index.html` en el navegador para pruebas básicas.
 
 **Datos de prueba**
+
 - Registro (ejemplo):
   - Nombre: `Juan Pérez García`
   - Email: `juan@example.com`
@@ -205,11 +216,10 @@ También puedes abrir directamente `file:///C:/Users/Makem/Desktop/Iacsharp/inde
   - RUT: `12.345.678-9`
 
 **Estructura de datos en `localStorage`**
+
 - `usuarios` : array de objetos usuario
 - `usuarioActual` : objeto con sesión activa (email, nombre, `pastillas`)
 - Cada `pastilla` contiene: `id`, `nombre`, `dosis`, `fechaCreacion`, `fechasTomadas` (array YYYY-MM-DD), `fechasFaltadas` (array YYYY-MM-DD)
-
-
 
 CORREO ELECTRÓNICO:
 ✓ Formato: usuario@dominio.extension
@@ -268,8 +278,8 @@ SOLUCIÓN DE PROBLEMAS
 PROBLEMA: El HTML no se abre
 SOLUCIÓN:
 
-1. Verifica la ruta: c:\Users(TU RUTA)
-2. Intenta abrir con PowerShell: start c:\Users(TU RUTA)
+1. Verifica la ruta: tu ruta
+2. Intenta abrir con PowerShell: start tu ruta
 3. O arrastra el archivo al navegador
 
 PROBLEMA: El .NET no se encuentra
@@ -326,11 +336,12 @@ NAVEGADORES SOPORTADOS:
 ESTRUCTURA DEL PROYECTO
 =====================================
 
-c:\Users\Makem\Desktop\Iacsharp\
-├── index.html                 ← Sistema de autenticación (Registro/Login)
-├── calendario.html            ← Gestión de medicamentos
-├── README.md                  ← Este archivo
-└── (proyecto .NET histórico eliminado; repositorio centrado en la app web)
+tu ruta/MediReminder/
+
+- index.html ← Sistema de autenticación (Registro/Login)
+- calendario.html ← Gestión de medicamentos
+- README.md ← Este archivo
+  └─ (repositorio centrado en la app web)
 
 =====================================
 GUÍA DE USO
